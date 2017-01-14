@@ -1,0 +1,75 @@
+{
+  "hb": {
+    "mappings": {
+      "hostAgent": {
+        "properties": {
+          "arch": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "cpu": {
+            "type": "long"
+          },
+          "cpuCount": {
+            "type": "byte"
+          },
+          "cpuDetail": {
+            "type": "keyword"
+          },
+          "diskPercent": {
+            "type": "short"
+          },
+          "diskUsedMB": {
+            "type": "long"
+          },
+          "event": {
+            "type": "keyword",
+            "ignore_above": 256
+          },
+          "hbIntervalSeconds": {
+            "type": "long"
+          },
+          "memMB": {
+            "type": "long"
+          },
+          "memPercent": {
+            "type": "long"
+          },
+          "memTotalMB": {
+            "type": "long"
+          },
+          "os": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "rxKByte": {
+            "type": "long"
+          },
+          "rxPacket": {
+            "type": "long"
+          },
+          "time": {
+            "type": "date"
+          },
+          "totalMemoryMB": {
+            "type": "long"
+          },
+          "txKByte": {
+            "type": "long"
+          },
+          "txPacket": {
+            "type": "long"
+          },
+          "uptimeMinutes": {
+            "type": "long"
+          }
+        }
+      }
+    }
+  }
+}
